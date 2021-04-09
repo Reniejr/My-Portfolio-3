@@ -27,4 +27,13 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    @media (max-width: 576px){
+        top: 5vh;
+        right: 50%;
+        @include transform(translate(50%, 0%));
+        flex-direction: row;
+        .fab{
+            margin-right: 1rem;
+        }
+    }
 }

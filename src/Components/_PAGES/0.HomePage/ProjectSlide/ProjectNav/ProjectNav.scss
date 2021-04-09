@@ -40,4 +40,12 @@ nav#project-nav{
             }
         }
     }
+    @media screen and (max-width: 992px){
+        width: 200px;
+        ul{
+            li{
+                font-size: 3.2vh;
+            }
+        }
+    }
 }

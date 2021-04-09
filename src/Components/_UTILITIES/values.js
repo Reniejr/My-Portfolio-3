@@ -122,3 +122,20 @@ export const projectSlider = [
     bgImage: "./assets/strivify.mp4",
   },
 ];
+
+//NAV QUERIES
+export const navQuery = () => {
+  const width = window.innerWidth;
+  const queries = [
+    {
+      size: 1365,
+      nav: 200,
+    },
+  ];
+  console.log(width);
+  const query = queries.find((q) => q.size <= width);
+  console.log(query);
+  if (query) {
+    return query;
+  }
+};

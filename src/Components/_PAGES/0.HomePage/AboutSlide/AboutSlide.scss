@@ -55,4 +55,53 @@
             }
         }
     }
+    @media screen and (max-width: 992px){
+        .about-slider{
+            .about-slide-container{
+                .about-slide{
+                    .content{
+                        p{
+                            font-size: 1.8vh;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 576px){
+        .about-slider{
+            .about-slide-container{
+                .about-slide{
+                    .content{
+                        border-right: 100px solid transparent;
+                        border-bottom: 1000px solid black;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 400px){
+        .about-slider{
+            .about-slide-container{
+                .about-slide{
+                    flex-direction: column;
+                    .content{
+                        height: 50%;
+                        width: 100%;
+                        border: none;
+                        background-color: black;
+                        p{
+                            font-size: .8rem;
+                        }
+                    }
+                    .about-img{
+                        height: 50%;
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
 }
