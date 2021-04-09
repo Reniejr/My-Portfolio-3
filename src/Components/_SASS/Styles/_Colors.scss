@@ -1,0 +1,12 @@
+$pure_black: black;
+$primary_red: #C42E13;
+@mixin glassStyle(){
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+@mixin borderGradient($gradient...){
+    border: 10px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: $gradient;
+}

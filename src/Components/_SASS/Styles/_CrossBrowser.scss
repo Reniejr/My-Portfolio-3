@@ -1,0 +1,32 @@
+@mixin animation($animation...){
+    animation: $animation;
+    -webkit-animation: $animation;
+}
+@mixin transition($transition...){
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+}
+
+@mixin borderRadius($borderRadius){
+    border-radius: $borderRadius;
+    -webkit-border-radius: $borderRadius;
+    -moz-border-radius: $borderRadius;
+    -ms-border-radius: $borderRadius;
+    -o-border-radius: $borderRadius;
+}
+
+@mixin transform($transform...){
+    transform: $transform;
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+}
+
+@mixin filters($filters...){
+    filter: $filters;
+    -webkit-filter: $filters;
+}

@@ -1,0 +1,43 @@
+@import '../../../../_SASS/All';
+nav#about-nav{
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    background-color: rgba($color: black, $alpha: .9);
+    @include transition(opacity .5s ease, margin-right 1s ease);
+    z-index: 100;
+    .toggler{
+        width: 20px;
+        height: 100px;
+        background-color: black;
+        content: "";
+        border-top-left-radius: 9999px;
+        border-bottom-left-radius: 9999px;
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        @include transform(translateY(-50%));
+        cursor: pointer;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 100%;
+        @include flexBox(column, center, none);
+        li{
+            padding: 10px;
+            color: #fff;
+            font-size: 3rem;
+            text-align: right;
+            margin-bottom: .5rem;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba($color: white, $alpha: .1);
+            }
+        }
+    }
+}

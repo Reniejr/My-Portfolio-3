@@ -1,0 +1,61 @@
+@import '../../../_SASS/All';
+#front-slide{
+    font-family:'Aclonica', sans-serif;
+    color: white;
+    img{
+        width: 45%;
+        position: absolute;
+        right: 0;
+        top: 4rem;
+        @include filters(drop-shadow(5px 2px 2px rgba($color: black, $alpha: .9)));
+    }
+    .title{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        h1{
+            position: relative;
+            z-index: 20;
+            font-size: 3rem;
+            text-shadow: 2px 3px rgba($color: black, $alpha: .7);
+        }
+        img{
+            top: 0;
+            width: 75px;
+            @include transform(rotate(20deg));
+            z-index: 5;
+            @include filters(drop-shadow(0px 0px 2px rgba($color: black, $alpha: .9)));
+        }
+        img:nth-of-type(1), img:nth-of-type(3){
+            top: 55px;
+            @include animation(lower_logo_animations 10s ease infinite);
+        }
+        img:nth-of-type(2), img:nth-of-type(4){
+            top: -70px;
+            width: 90px;
+            @include animation(upper_logo_animations 10s ease infinite);
+        }
+        img:nth-of-type(1){left: 2rem;}
+        img:nth-of-type(2){left:10rem;}
+        img:nth-of-type(3){left: 16rem;}
+        img:nth-of-type(4){left: 22rem;}
+    }
+    .one-liner{
+        font-family: "Poppins", sans-serif;
+        position: absolute;
+        bottom: 4rem;
+        left: 5rem;
+        text-shadow: 2px 2px rgba($color: black, $alpha: .7);
+    }
+}
+
+@keyframes upper_logo_animations{
+    0%{}
+    50%{top: 55px;}
+    100%{rotate:360deg}
+}
+@keyframes lower_logo_animations{
+    0%{}
+    50%{top: -70px;}
+    100%{rotate:360deg}
+}

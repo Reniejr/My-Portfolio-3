@@ -1,0 +1,31 @@
+@import '../../../_SASS/All';
+.container{
+    margin: 12vh auto;
+    width: 100%;
+    height: calc(100vh - 24vh);
+    position: relative;
+    z-index: 10;
+    @include transition(all 1s ease);
+    #slider{
+        @include fullSize();
+        z-index: 10;
+        overflow: hidden;
+        #slide-container{
+            width: 300%;
+            height: 100%;
+            @include flexBox(row, none, center);
+            @include transition(all 1s ease);
+            .slide{
+                width: calc(100% / 3);
+                height: 100%;
+                @include glassStyle();
+                position: relative;
+                @include borderRadius(10px);
+                border: 1px solid rgba($color: white, $alpha:.1);
+                overflow: hidden;
+                z-index: 15;
+                box-shadow: 0px 5px 10px rgba($color: black, $alpha:.4);
+            }
+        }
+    }
+}

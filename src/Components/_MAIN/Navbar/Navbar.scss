@@ -1,0 +1,26 @@
+@import '../../_SASS/All';
+
+nav#navbar{
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 100;
+    backdrop-filter: blur(1px);
+    padding: 5px;
+    @include appearAnim();
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include flexBox(row, none, center);
+        li{
+            font-family: 'Aclonica', sans-serif;
+            color: #fff;
+            margin-right: 1.3rem;
+            cursor: pointer;
+            &:hover{
+                color: $primary_red;
+            }
+        }
+    }
+}

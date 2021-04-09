@@ -1,0 +1,29 @@
+@import '../../_SASS/All';
+
+#controllers{
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    @include transform(translateX(-50%));
+    @include flexBox(row, none, center);
+    @include appearAnim();
+    .fas{
+        color: white;
+        cursor: pointer;
+    }
+    .fa-caret-left{
+        margin-right: 1rem;
+    }
+    .indicators{
+        @include flexBox(row, none, center);
+        .indicator{
+            width: 15px;
+            height: 15px;
+            @include borderRadius(50%);
+            background-color: #fff;
+            content: " ";
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+    }
+}

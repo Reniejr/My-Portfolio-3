@@ -1,0 +1,32 @@
+@import '../../_SASS/All';
+#home-page{
+    .signature{
+        padding: 1.5rem;
+        font-family: 'Arizonia', cursive;
+        color: #fff;
+        font-size: 9rem;
+        z-index: 2;
+        position: absolute;
+        white-space: nowrap;
+        letter-spacing: 1px;
+        overflow: hidden;
+        @include transform(rotate(-20deg));
+        top: .5rem;
+        left: -2rem;
+        animation: sign_anim 3.5s steps(40, end);
+        -webkit-animation: sign_anim 3.5s steps(40, end);
+}
+}
+
+@keyframes sign_anim {
+    0% {
+        @include transform(rotate(0deg));
+        width: 0 
+    }
+    90% { 
+        @include transform(rotate(0deg));
+      width: 100% 
+    }
+  100%{
+    @include transform(rotate(-20deg));}
+}
