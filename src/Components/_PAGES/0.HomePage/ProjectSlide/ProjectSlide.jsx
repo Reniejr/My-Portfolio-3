@@ -53,7 +53,7 @@ export default function ProjectSlide() {
                   </div>
                 </div>
                 <div className="project-img">
-                  <video src={topic.bgImage} loop autoPlay muted></video>
+                  {/* <video src={topic.bgImage} loop autoPlay muted></video> */}
                 </div>
               </div>
             );
