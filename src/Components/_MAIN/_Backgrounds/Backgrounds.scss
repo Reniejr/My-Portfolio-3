@@ -16,11 +16,16 @@
     .binary-text{
         p{
             color: red;
+            @include filters(brightness(150%));
             margin: 0;
             font-weight: 700;
         }
         .binary-animated{
             @include animation(type_write 1s ease, char_drop 10s ease, char_rotate 5s linear infinite);
+        }
+        .character{
+            background-color: transparent;
+            color: red;
         }
     }
 }
@@ -58,13 +63,13 @@
         color: white;
     }
     .left-side{
-        background: linear-gradient(166deg, rgba(32,1,34,.95) 0%, rgba(111,0,0,.85) 100%);
+        background: linear-gradient(166deg, rgba(32,1,34,.85) 0%, rgba(111,0,0,.80) 100%);
         clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
         @include animation(left_side_entrance 3s ease);
 }
     .right-side{
         margin-left: -33.5%;
-        background:linear-gradient(42deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 100%);
+        background:linear-gradient(42deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,0.6) 100%);
         clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
         @include animation(right_side_entrance 3s ease);
     }

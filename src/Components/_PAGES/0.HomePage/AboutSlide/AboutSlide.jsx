@@ -27,10 +27,10 @@ export default function AboutSlide() {
           className="about-slide-container"
           style={{ marginTop: `${slide}vh` }}
         >
-          {aboutSlider.map((topic) => {
+          {aboutSlider.map((topic, topicI) => {
             let content = convertText(topic.content);
             return (
-              <div className="about-slide" key={topic.id}>
+              <div className="about-slide" key={topicI}>
                 <div className="content">{content}</div>
                 <div
                   className="about-img"

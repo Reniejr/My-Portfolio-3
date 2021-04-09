@@ -41,7 +41,9 @@ export function BgCoding() {
                   style={{
                     animationDelay: `${charDelay}, ${dropDelay}, ${dropDelay}`,
                   }}
-                  className={intervalAnimation ? "binary-animated" : ""}
+                  className={
+                    intervalAnimation ? "binary-animated" : "character"
+                  }
                 >
                   {char}
                 </p>

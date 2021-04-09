@@ -25,7 +25,7 @@ export default function Navbar({ state, functions }) {
               key={vI}
               onClick={() => navigate(v.id)}
               style={{
-                color: state.slideShow === vI * -100 - 100 ? "red" : "white",
+                color: state.slideShow === vI * -100 - 100 ? "red" : "",
               }}
             >
               {v.name}
