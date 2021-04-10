@@ -6,7 +6,10 @@ import "./FrontSlide.scss";
 export default function FrontSlide() {
   return (
     <div id="front-slide" className="slide">
-      <img src="https://i.ibb.co/KbB92db/Livello-1.png" alt="" />
+      <img
+        src="https://i.ibb.co/7pNxPvS/photo-2021-04-10-20-44-52-removebg-preview.png"
+        alt=""
+      />
       <div className="title">
         <h1>MERN Stack Developer</h1>
         <img src="https://i.ibb.co/0GLzkSV/mongodb.png" alt="" />
