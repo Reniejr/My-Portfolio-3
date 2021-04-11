@@ -13,7 +13,7 @@ export default function ProjectSlide() {
   const [slide, setSlide] = useState(0);
 
   const redirect = (link) => {
-    window.location.assign(link);
+    window.open(link, "_blank");
   };
 
   return (

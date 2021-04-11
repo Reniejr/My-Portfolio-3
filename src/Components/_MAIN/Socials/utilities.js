@@ -1,3 +1,3 @@
 export const socialRedirect = (link) => {
-  window.location.assign(link);
+  window.open(link, "_blank");
 };
