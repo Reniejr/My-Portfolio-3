@@ -37,7 +37,7 @@
         }
     }
     @media (max-width: 480px){
-        top: 90%;
+        top: 95%;
         right: 0;
         @include transform(translate(-10%, 0%));
         flex-direction: row;

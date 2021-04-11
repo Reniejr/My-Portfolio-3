@@ -188,8 +188,9 @@
         .project-slider{
             .project-slide-container{
                 .project-slide{
+                    position: relative;
                     .content{
-                        bottom: 0;
+                        bottom: 2rem;
                         p{
                             font-size: .8rem;
                         }
@@ -205,8 +206,8 @@
                         }
                     }
                     .project-img{
-                        width: 120%;
-                        margin-top: 10px;
+                        width: 150%;
+                        @include absoluteCentered();
                     }
                 }
             }
