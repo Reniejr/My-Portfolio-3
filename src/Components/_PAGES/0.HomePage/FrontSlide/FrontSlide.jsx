@@ -23,6 +23,28 @@ export default function FrontSlide() {
           From 0 to Web. <br /> No coding experience before my journey on Strive
           School, <br /> but now i am a real Web Developer.
         </p>
+        <div className="contacts">
+          <span>
+            {" "}
+            <div className="logos">
+              <img src="https://i.ibb.co/mR0ZPYJ/gmail.png" alt="" />{" "}
+            </div>
+            reniejr@gmail.com
+          </span>
+          <span>
+            <div className="logos">
+              <img src="https://i.ibb.co/xj3DxWt/telegram.png" alt="" />{" "}
+              <img src="https://i.ibb.co/6XF1cjk/whatsapp.png" alt="" />
+            </div>
+            +39 3885763408
+          </span>{" "}
+          <span>
+            <div className="logos">
+              <img src="https://i.ibb.co/FKWg0Xr/discord.png" alt="" />{" "}
+            </div>
+            RenieJrDelis
+          </span>
+        </div>
       </div>
     </div>
   );
