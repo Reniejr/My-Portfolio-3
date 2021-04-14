@@ -6,6 +6,7 @@ import Slider from "./_Slider/Slider";
 import Navbar from "../../_MAIN/Navbar/Navbar";
 import Controllers from "../../_MAIN/Controllers/Controllers";
 import Socials from "../../_MAIN/Socials/Socials";
+import { ArrowsControllers } from "../../_MAIN/Controllers/Controllers";
 
 //STYLE IMPORTS
 import "./HomePage.scss";
@@ -28,6 +29,7 @@ export default function HomePage() {
       <BgLayout />
       <Slider state={{ show, slideShow }} />
       <Controllers state={{ slideShow }} functions={{ setSlideShow }} />
+      <ArrowsControllers state={{ slideShow }} functions={{ setSlideShow }} />
     </div>
   );
 }

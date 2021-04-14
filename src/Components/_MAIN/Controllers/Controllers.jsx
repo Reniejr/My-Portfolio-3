@@ -48,3 +48,22 @@ export default function Controllers({ state, functions }) {
     </div>
   );
 }
+
+export const ArrowsControllers = function ({ state, functions }) {
+  return (
+    <>
+      <div className="arrow-left">
+        <i
+          className="fas fa-chevron-left"
+          onClick={() => functions.setSlideShow(state.slideShow + 100)}
+        ></i>
+      </div>
+      <div className="arrow-right">
+        <i
+          className="fas fa-chevron-right"
+          onClick={() => functions.setSlideShow(state.slideShow - 100)}
+        ></i>
+      </div>
+    </>
+  );
+};
